@@ -1,0 +1,72 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;	/*使元素的内边距和边框不会增加它的宽度*/
+         /*这样可以确保所有的元素都会用这种更直观的方式排版。*/ 
+}
+
+body {
+	margin: 0;
+	font-family: "Microsoft YaHei UI", sans-serif;
+	min-width: 1000px;
+}
+
+#team {
+	width: 94%;
+	height: 600px;
+	outline: 1px solid #999;
+	background-color: #eee;
+	margin: auto;
+	margin-top: 30px;
+	padding: 30px;
+	position: relative;
+}
+
+#team_logo {
+	width: 200px;
+	height: 150px;
+	outline: 1px solid #999;
+	background-color: white;
+	position: absolute;
+	left: 20px;
+	top: 30px;
+}
+
+#team_logo img {
+	width: 115px;
+	height: 100px;
+}
+
+.soul {
+	float: right;
+	line-height: 60px;
+	margin-right: 5px;
+}
+
+#team_introduce {
+	height: 500px;
+	outline: 1px solid #999;
+	padding: 20px;
+	margin-left: 220px;
+	margin-right: 160px;
+	background-color: white;
+}
+
+#personal_logo {
+	width: 120px;
+	height: 530px;
+	outline: 1px solid #999;
+	background-color: white;
+	position: absolute;
+	top: 30px;
+	right: 40px;
+}
+
+#personal_logo img {
+	width: 120px; 
+	height: 100px;
+	display: block;
+	margin-top: 5px;
+	padding: 5px;
+	
+}

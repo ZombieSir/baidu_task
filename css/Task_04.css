@@ -1,0 +1,57 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+/*div的100%是从其上一级div的宽高继承来的,所以这里如果没有html标签就不行*/
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+article {
+	width: 400px;
+	height: 200px;
+	background-color: #999;
+	position: relative;
+	overflow: hidden;		/*隐藏溢出的部分*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);			/*旋转元素*/
+	-moz-transform: translate(-50%, -50%);		/* Firefox 可是火狐没这个也行*/
+	-webkit-transform: translate(-50%, -50%);	/* Safari 和 Chrome */
+	-o-transform: translate(-50%, -50%);		/* Opera */
+	-ms-transform: translate(-50%, -50%);		/* IE 9 */
+	
+	/* 
+	//绝对定位：这种方法html标签中不需要width: 100%;height: 100%;
+	//article中也不需要transform: translate(-50%, -50%);
+	//使用margin:auto;能使标签水平居中，使用绝对定位加四个方向距离使标签垂直居中
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0; 
+	*/
+}
+
+#fix1 {
+	width: 100px;
+	height: 100px;
+	background-color: #fc0;
+	position: absolute;
+	left: -50px;
+	top: -50px;
+	border-radius: 50%;
+}
+
+#fix2 {
+	width: 100px;
+	height: 100px;
+	background-color: #fc0;
+	position: absolute;
+	right: -50px;
+	bottom: -50px;
+	border-radius: 50%;
+}

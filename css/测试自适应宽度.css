@@ -1,0 +1,17 @@
+.container {
+	position: relative;
+	outline: 1px solid blue;
+}
+
+nav {
+	position: absolute;
+	left: 0;
+	width: 200px;
+	outline: 1px solid red;
+}
+
+section {
+	margin-left: 200px;	/*section的margi-left样式确保了有足够的空间容纳nav元素*/
+	outline: 1px solid green;
+}
+

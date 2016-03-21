@@ -1,0 +1,370 @@
+* {
+	margin: 0;
+	padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;	/*使元素的内边距和边框不会增加它的宽度*/
+         /*这样可以确保所有的元素都会用这种更直观的方式排版。*/ 
+}
+
+body {
+	width: 960px;
+	margin: auto;
+	font: 12px "黑体";
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	border-bottom: 2px solid #999; 
+}
+
+.address {
+	width: 120px;
+	height: 70px;
+	background-color: #b44;
+	
+	font-style: italic;
+	color: white;
+	line-height: 120px;
+	text-indent: 14px;
+}
+
+.time {
+	float: right;
+	margin-top: -20px;
+	color: #c33;
+}
+
+.one {
+	width: 100%;
+	height: 350px;
+	margin-top: 30px;
+}
+
+.one img {
+	width: 700px;
+	height: 350px;
+}
+
+.one-left {
+	width: 700px;
+	height: 350px;
+	position: relative;
+	float: left;
+}
+
+.img-left {
+	width: 200px;
+	height: 350px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #9c6;
+	opacity: 0.1;
+}
+
+.img-right {
+	width: 200px;
+	height: 350px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #f66;
+	opacity: 0.1;
+}
+
+.one-right {
+	width: 200px;
+	height: 350px;
+	border-top: 2px solid #b44;
+	font-size: 10px;
+	float: right;
+	/*这里块级转行级是转了，但是要放到one-left右边还要把one-left转成行级标签，否者它是单独占一行的*/
+}
+
+.one-font-size {
+	font-size: 30px;
+}
+
+.one-font-size a{
+	color: black;
+}
+
+.one-font-size span {
+	font-size: 38px;
+}
+
+.one-font-num {
+	font: 130px "黑体";
+	color: #6c6;
+	font-style: italic;
+	text-indent: -10px;
+} 
+
+.one-font-bottom{
+	font: 70px "Microsoft YaHei UI";
+	color: #c69;
+	float: left;
+	margin-top: 14px;
+}
+
+.one-font-css {
+	font-size: 10px;
+	color: #c69;
+	text-indent: 10px;
+	margin-top: 50px;
+}
+
+.one-font-css span {
+	font-size: 20px;
+}
+
+.two {
+	width: 100%;
+	height: 250px;
+}
+
+.two article {
+	width: 240px;
+	float: left;
+	margin: 40px 20px 40px 0;	
+}
+
+.two-article-p {
+	margin-top: 50px;
+}
+
+.two-article-span {
+	color: #f99;
+}
+
+/*要使a标签改变字体颜色需要把选择器写到a标签中，否则no用*/
+.what {
+	color: #9c6;
+}
+
+.when {
+	color: #f96;
+}
+
+.how {
+	color: #f99;
+}
+
+.three {
+	width: 100%;
+	height: 900px;
+	overflow: hidden; 
+	font-family:"Microsoft YaHei UI";
+}
+
+.three-left {
+	width: 48%;
+	outline: 1px solid #ccc;
+	float: left;
+}
+
+.three-left-p1 {
+	font-size: 30px;
+	border-bottom: 2px solid #036;
+}
+
+.three-left-the {
+	font-size: 70px;
+	font-style: italic;
+	color: #fc0;
+}
+
+.three-left-tech {
+	color: #036;
+}
+
+.three-left-p2 {
+	margin-top: 20px; 
+	float: left;
+}
+
+.three-left-qian {
+	margin: 20px 20px 0 0;
+	font-size: 70px;
+	color: #fc0;
+}
+
+.three-left-p2 span {
+	float: left;		/*只有这里加上float: left;字才能靠上来*/
+}
+
+.three-left img {
+	width: 200px;
+	height: 360px;
+	float: right;
+	margin: 10px;
+}
+
+.three-left-p345 {
+	text-indent: 26px;
+}
+
+.three-right {
+	width: 50%;
+	float: left;
+	margin-left: 2%;
+}
+
+.three-right img {
+	width: 100%;
+	height: 300px;	
+}
+
+.three-right-div {
+	width: 100%;
+	position: relative;
+}
+
+.img-div {
+	width: 100%;
+	height: 60px;
+	background-color: #333;
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.img-div-div {
+	width: 4px;
+	height: 50px;
+	background-color: #0c6;
+	float: left;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+.img-div span {
+	line-height: 55px;
+	margin-left: 10px;
+}
+
+.img-div-span1 {
+	font-size: 35px;
+	color: white;
+}
+
+.img-div-span2 {
+	font-size: 15px;
+	color: #0c6;
+}
+
+.three-right article {
+	width: 100%;
+	padding-top: 20px;
+	background-color: #eeedd6;
+	margin-top: 40px;
+}
+
+/*制成三角形*/
+.trangle {
+	border-left: 5px solid transparent; 
+	border-right: 5px solid transparent; 
+	border-bottom: 10px solid #10456b; 
+	display: inline-block; 
+	margin: -10px 5px 0 0;
+}
+
+.three-right article p {
+	margin-left: 30px;
+	margin-top: 10px;
+	font: 16px/41px "宋体";
+}
+
+.pot {
+	padding-left: 5px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.three-right-bottom {
+	width: 100%;	
+	float: left;
+} 
+
+.artilce-div1 {
+	width: 60%;
+	background-color: #d45d5c;
+	float: left;
+	margin-top: 20px;
+}
+
+.article-div-left {
+	width: 60%;
+	height: 170px;
+	float: left;
+}
+
+.zero {
+	font: 100px "Microsoft YaHei UI";
+	color: white;
+	line-height: 160px;
+	text-indent: 20px;
+	margin-left: 20px;
+}
+
+.shuxian {
+	width: 3px;
+	height: 100px;
+	background-color: white;
+	margin-top: 26px;
+	margin-left: -5px;
+	display: inline-block;		/*多个嵌套的使用float会出现问题,所以将此div转换成*/
+}
+
+.article-div-right {
+	margin-left: -80px;
+	float: left;
+	margin-top: 50px;
+}
+
+.one-two-three {
+	font: italic 21px/24px "黑体"; 
+	color: #fff; 
+	padding: 8px 0 0 5px;
+}
+
+.hello-world {
+	 font: 12px/10px "黑体"; 
+	 color: #fff; 
+	 padding-left: 5px; 
+}
+
+.article-div2 {
+	width: 40%;
+	float: right;	
+}
+
+.article-div2-p {
+	font-style: italic;
+	 font: 12px/10px "黑体"; 
+	color: #5a5b5b;
+}
+
+.article-div2 span {
+	font: 72px "黑体"; 
+	color: #d45d5c;
+	
+	
+}
+
+.yinhao-one {
+	float: left;
+	margin: 0px 20px 0 -40px;
+	height: 30px;
+}
+
+.yinhao-two {
+	float: left;
+	 margin: -20px 0 0 130px;
+}
+

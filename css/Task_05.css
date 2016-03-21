@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;	/*使元素的内边距和边框不会增加它的宽度*/
+         /*这样可以确保所有的元素都会用这种更直观的方式排版。*/ 
+}
+
+html,
+body {
+	margin: auto;
+	min-width: 1000px;
+	background-color: #ccc;
+	font-family: "Microsoft YaHei UI", sans-serif;
+	/*在width用百分比的情况下控制缩放，在缩到小于1000px时出现左右滑条，防止过度缩小将一些东西挤掉*/
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	background-color: #333;
+}
+
+/*顶部图片id*/
+#logo {
+	margin: 10px 0 0 100px;	/*顺时针：上、右、下、左*/
+	width: 250px;
+	height: 60px;
+}
+
+/*导航id*/
+#link {
+	float: right;
+}
+
+#link ul {
+	margin-right: 40px;
+	margin-top: 20px;
+}
+
+#link li {
+	display: inline;	/*转成行级元素，制成水平元素，在这里与float:left;效果是一样的*/
+	margin-left: 20px;
+}
+
+/*颜色区分导航四与其他导航：利用id选择器优先级>类选择器*/
+.link_color {
+	text-decoration: none;
+	color: #eee;
+}
+
+#link4 {
+	color: #ccc;
+}
+
+.article {
+	width: 71%;
+	margin: 20px;
+	background-color: white;
+	padding: 3%;
+	border-right-style: ridge;
+	border-bottom-style: ridge; /*阴影*/
+}
+
+#article_last {
+	width: 340px;
+	height: 440px;
+	position: absolute;
+	top: 100px;
+	right: 10px;
+	background-color: white;
+	padding: 1%;
+	border-style: ridge;
+	border-color: #fc0;
+	/*阴影*/
+}
+
+label,span {
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #999;
+}
+
+ul,ol {
+	margin-left: 20px;
+}
+
+p {
+	margin-top: 10px;
+}
+
+/*图片区域利用类选择器*/
+.flower {
+	width: 110px;
+	height: 120px;
+	outline: 1px solid #ccc;	/*不占位置的边框，测试用最好啦*/
+	margin: 30px 0 0 50px;
+	text-indent: 10px;
+	display: inline-block;	
+	/*既不换行又可以使用块元素所拥有的属性，类似于块元素加了浮动效果，在这里用display:inline;
+	和float: left;都不行*/
+}
+
+table {
+	width: 100%;
+	border-color: white;
+}
+td {
+	border: 1px solid #ccc;		/*与table低行颜色一致，实现视觉上中间无边框效果*/
+}
+/*table顶行*/
+#table_top {
+	background-color: #333;
+	color: white;
+}
+
+/*table底行*/
+#table_footer {
+	background-color: #ccc;
+	font-weight: bold;
+}
+
+.sidebar {
+	margin-top: 20px;
+}
+
+form span {
+	margin-left: 110px;
+	color: #ccc;
+}
+
+form p {
+	margin-top: 10px;
+}
+
+/*绘制一条竖线*/
+.hr {
+	width: 4px;
+	height: 40px;
+	background-color: #ccc;
+	float: left;			/*块级标签转行级标签，不知道为什么display:inline;为什么不行？*/
+	margin-top: -10px;
+}
+
+#submit {
+	width: 100%;
+	height: 50px;
+	border-radius: 10px; 			/*圆角半径*/
+	box-shadow: 0px 0px 2px #ccc; /*X轴偏移量、Y轴偏移量、阴影的大小、阴影的颜色*/
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #09c;
+	margin-top: 20px;
+}
+
+footer {
+	width: 100%;
+	height: 80px;
+	color: white;
+	background-color: black;
+	text-align: center;
+	line-height: 80px;
+}

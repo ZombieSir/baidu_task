@@ -344,27 +344,29 @@ header {
 	float: right;	
 }
 
-.article-div2-p {
+#article-div2-p {
 	font-style: italic;
-	 font: 12px/10px "黑体"; 
+	font: 12px "黑体"; 
 	color: #5a5b5b;
+	line-height: 20px;
+	display: inline-block;
+	text-indent: 35px;
+	margin-top: -10px;
 }
 
 .article-div2 span {
 	font: 72px "黑体"; 
 	color: #d45d5c;
-	
-	
 }
 
 .yinhao-one {
 	float: left;
-	margin: 0px 20px 0 -40px;
+	margin: 0px 20px 0 -10px;
 	height: 30px;
 }
 
 .yinhao-two {
 	float: left;
-	 margin: -20px 0 0 130px;
+	 margin: -20px 0 0 100px;
 }
 

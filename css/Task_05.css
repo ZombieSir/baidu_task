@@ -9,9 +9,8 @@
 
 html,
 body {
-	margin: auto;
-	min-width: 1000px;
 	background-color: #ccc;
+	min-width: 800px;
 	font-family: "Microsoft YaHei UI", sans-serif;
 	/*在width用百分比的情况下控制缩放，在缩到小于1000px时出现左右滑条，防止过度缩小将一些东西挤掉*/
 }
@@ -27,6 +26,9 @@ header {
 	margin: 10px 0 0 100px;	/*顺时针：上、右、下、左*/
 	width: 250px;
 	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 /*导航id*/
@@ -55,8 +57,9 @@ header {
 }
 
 .article {
-	width: 71%;
+	width: auto;
 	margin: 20px;
+	margin-right: 360px;
 	background-color: white;
 	padding: 3%;
 	border-right-style: ridge;

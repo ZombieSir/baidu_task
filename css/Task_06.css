@@ -341,7 +341,8 @@ header {
 
 .article-div2 {
 	width: 40%;
-	float: right;	
+	float: right;
+	margin-top: 20px;	
 }
 
 #article-div2-p {
